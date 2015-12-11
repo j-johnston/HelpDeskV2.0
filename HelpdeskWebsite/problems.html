@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Problems</title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <!--navigation-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html">HelpDesk Case #2</a>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav" id="menu">
+                <li><a href="/employees.html">Employees</a></li>
+                <li><a href="/departments.html">Departments</a></li>
+                <li><a href="/problems.html">Problems</a></li>
+                <li><a href="/util.html">Utility</a></li>
+                <li><a href="/EmployeeMobile.html">Mobile</a></li>
+            </ul>
+            <ul class="nav pull-right" style="padding-right:20px;padding-top:10px;color:white;font-weight:bolder">
+                <li>v2.0</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--header-->
+    <div class="row" style="width:100%">
+        <h1 align="center" style="margin-top:100px;">Problems</h1>
+    </div>
+
+    <!--Image-->
+    <div class="row" style="width:100%">
+        <img src="Content/k1575014.jpg" alt="help desk image" height="300" width="400" style="margin:0 750px;" />
+    </div>
+
+    <!--Panel-->
+    <div class="panel-group col-sm-4 col-xs-8" style="z-index: 100; border-style:solid; border-width: 1px; position:fixed; width:800px; top:0px; left:50%; margin-left:-400px; margin-top:500px;">
+        <div class="panel panel-heading" style="border:none; background-color:black; color:white;">
+            <div class="panel-heading xsmall row">
+                <div class="col-xs-12">Description</div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel panel-primary" style="height:200px; overflow-y: auto; overflow-x: hidden; border: none;">
+                <div id="main"></div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="col-xs-10" id="lblstatus"></div>
+        </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal fade text-center" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                    <h1>Problem Information</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-4">Description:</div>
+                        <div class="col-xs-8"><input type="text" placeholder="enter title" id="TextBoxName" class="form-control" /></div>
+                    </div>
+                    <input type="hidden" id="HiddenEntity" />
+                    <input type="hidden" id="HiddenId" />
+                </div>
+                <div class="modal-footer">
+                    <div class="col-xs-12">
+                        <input type="submit" id="ButtonAction" class="btn panel-body" />
+                        <input type="submit" id="ButtonDelete" class="btn panel-body" value="Delete" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/problems.js"></script>
+</body>
+</html>
+

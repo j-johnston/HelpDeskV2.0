@@ -1,0 +1,19 @@
+﻿     .rowWhite:hover, .rowLightGray:hover {
+        background-color: darkgray;
+        color: #fff;
+      }
+
+    .rowLightGray {
+        background-color:lightgray;
+        color: black;
+        font-weight: normal;
+    }
+
+    div.error {
+    background-color: #F3E6E6;
+    border-color: #924949;
+    border-style: solid solid solid solid;
+    border-width: 2px;
+    width: 50%;
+    text-align: center;
+}
